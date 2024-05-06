@@ -1,0 +1,31 @@
+---
+import FiguraContainer from '../components/FiguraContainer';
+---
+
+<html lang='en'>
+  <head>
+    <meta charset='utf-8' />
+    <link rel='icon' type='image/svg+xml' href='/favicon.svg' />
+    <meta name='viewport' content='width=device-width' />
+    <meta name='generator' content={Astro.generator} />
+    <title>Figuras Literarias</title>
+  </head>
+  <body>
+    <FiguraContainer client:visible />
+  </body>
+</html>
+
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+	body {
+		font-family: 'Montserrat', sans-serif;
+		margin: 0;
+		padding: 0;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		height: 100vh;
+		background-color: #f0f0f0;
+	}
+</style>
