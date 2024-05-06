@@ -5,7 +5,7 @@ interface HeaderProps {
 const Header = ({ title } : HeaderProps) => {
   return (
     <header>
-      <h1 className={'text-8xl mb-12'}>{title}</h1>
+      <h1 className={'text-4xl md:text-8xl mb-12 font-bold'}>{title}</h1>
     </header>
   );
 };

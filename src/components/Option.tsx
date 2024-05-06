@@ -36,7 +36,7 @@ const Option = ({
 
   return (
     <div {...props}>
-      <p className={`${style} text-2xl p-4 m-2 transition-all rounded-xl`} onClick={handleClick}>
+      <p className={`${style} text-xl md:text-2xl p-4 m-2 transition-all rounded-xl`} onClick={handleClick}>
         {definition}
       </p>
     </div>
