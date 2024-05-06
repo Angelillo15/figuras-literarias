@@ -11,8 +11,12 @@ export const randomNumber = (max: number) => Math.floor(Math.random() * max);
 export const generateQuestion = (figuras: Figura[]): Question => {
   const possibleAnswers: Figura[] = []
 
-  for (let i = 0; i < 4; i++) {
+  for (let i = 0; possibleAnswers.length < 4; i++) {
     let figura = figuras[randomNumber(figuras.length)];
+
+    if (figura == undefined || possibleAnswers.includes(figura)) {
+      continue;
+    }
 
     if (figura !== undefined) {
       possibleAnswers.push(figura);
