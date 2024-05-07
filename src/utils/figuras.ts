@@ -39,7 +39,7 @@ export const figuras: Figura[] = [
   },
   {
     name: 'Anafora',
-    definition: 'Consiste en empezar una frase o verso con la misma palabra que termina el anterior'
+    definition: 'Consiste en empezar una frase o verso con la misma palabra con la cual empieza el anterior'
   },
   {
     name: 'Anadiplósis',
